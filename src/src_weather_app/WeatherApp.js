@@ -1,12 +1,11 @@
 import React from "react";
-import "./App9999.css";
+import "./WeatherApp.css";
 import SelectCity from "./SelectCity";
 import IterateCityId from "./IterateCityId";
 
-function App9999() {
+function WeatherApp() {
   return (
     <div className="app">
-      git
       <div className="container">
         <div className="top">
           <div className="app-title">
@@ -28,4 +27,4 @@ function App9999() {
   );
 }
 
-export default App9999;
+export default WeatherApp;
