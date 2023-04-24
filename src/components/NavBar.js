@@ -77,6 +77,18 @@ const NavBar = () => {
                 </NavItem>
               )}
               {isAuthenticated && (
+                <NavItem>
+                  <Button
+                    color="secondary"
+                    id="qsLogoutBtn"
+                    onClick={() => logoutWithRedirect()}
+                  >
+                    Log out
+                  </Button>
+                </NavItem>
+              )}
+            </Nav>
+            {/* {isAuthenticated && (
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret id="profileDropDown">
                     <img
@@ -105,23 +117,9 @@ const NavBar = () => {
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
-              )}
-            </Nav>
-            {!isAuthenticated && (
-              <Nav className="d-md-none" navbar>
-                <NavItem>
-                  <Button
-                    id="qsLoginBtn"
-                    color="primary"
-                    block
-                    onClick={() => loginWithRedirect({})}
-                  >
-                    Log in
-                  </Button>
-                </NavItem>
-              </Nav>
-            )}
-            {isAuthenticated && (
+              )} */}
+
+            {/* {isAuthenticated && (
               <Nav
                 className="d-md-none justify-content-between"
                 navbar
@@ -158,7 +156,7 @@ const NavBar = () => {
                   </RouterNavLink>
                 </NavItem>
               </Nav>
-            )}
+            )} */}
           </Collapse>
         </Container>
       </Navbar>
