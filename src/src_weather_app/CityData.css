@@ -2,7 +2,7 @@
   width: 49%;
   max-width: 377px;
   min-width: 275px;
-  height: auto;
+  aspect-ratio: 16/9;
   overflow: hidden;
   background-size: contain;
   background: url("./weather_app_assets/cloud-card.png") no-repeat bottom/cover;
@@ -114,6 +114,7 @@
 .max-temp {
   font-size: 10px;
   align-items: left;
+  line-height: 0.5;
 }
 
 .city-bottom {
@@ -141,6 +142,7 @@
 .visibility {
   font-size: 10px;
   margin-left: 5px;
+  line-height: 0.5;
 }
 
 .city-bottom-middle {
@@ -185,6 +187,7 @@
   font-size: 10px;
   justify-content: center;
   margin-left: 25px;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 750px) {
