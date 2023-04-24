@@ -1,5 +1,5 @@
 import React from "react";
-import cityDataFromFile from "./assets/cities.json";
+import cityDataFromFile from "./weather_app_assets/cities.json";
 import CallApiData from "./CallApidata";
 
 function IterateCityId() {

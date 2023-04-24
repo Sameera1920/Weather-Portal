@@ -3,7 +3,7 @@ import { COLORS } from "./Constants.js";
 import "./index.css";
 import "./App9999.css";
 import "./CityData.css";
-import jsonFileData from "./assets/cities.json";
+import jsonFileData from "./weather_app_assets/cities.json";
 import CityMainDetails from "./CityDataComponents/CityMainDetails";
 import Atmosphere from "./CityDataComponents/Atmosphere";
 import TempMinMax from "./CityDataComponents/TempMinMax";

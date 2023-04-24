@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import DisplayCityData from "./DisplayCityData";
-// import cityDataFromFile from "./assets/cities.json";
+// import cityDataFromFile from "./weather_app_assets/cities.json";
 
 function CallApiData(props) {
   // const cityIdArray = cityDataFromFile.List;
-  const { index, code} = props;
+  const { index, code } = props;
   const [data, setData] = useState(null);
 
   const cacheExpirationTime = process.env.REACT_APP_CACHE_EXPIRATION_TIME;

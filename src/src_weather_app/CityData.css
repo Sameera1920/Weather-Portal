@@ -5,7 +5,7 @@
   height: auto;
   overflow: hidden;
   background-size: contain;
-  background: url("./assets/cloud-card.png") no-repeat bottom/cover;
+  background: url("./weather_app_assets/cloud-card.png") no-repeat bottom/cover;
   background-color: #3891e0;
   margin: 3px 3px;
   border-radius: 6px;
