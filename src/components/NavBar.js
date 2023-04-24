@@ -7,15 +7,15 @@ import {
   Container,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
+  // NavbarBrand,
   Nav,
   NavItem,
   NavLink,
   Button,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  // UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
 } from "reactstrap";
 
 import { useAuth0 } from "@auth0/auth0-react";
@@ -50,20 +50,6 @@ const NavBar = () => {
                   Home
                 </NavLink>
               </NavItem>
-              {isAuthenticated && (
-                <NavItem>
-                  <NavLink
-                    tag={RouterNavLink}
-                    to="/weather-api"
-                    exact
-                    activeClassName="router-link-exact-active"
-                  >
-                    Weather API
-                  </NavLink>
-                </NavItem>
-              )}
-            </Nav>
-            <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
                 <NavItem>
                   <Button
@@ -76,7 +62,20 @@ const NavBar = () => {
                   </Button>
                 </NavItem>
               )}
-              {isAuthenticated && (
+            </Nav>
+
+            {isAuthenticated && (
+              <Nav className="mr-auto" navbar>
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/weather-api"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Weather API
+                  </NavLink>
+                </NavItem>
                 <NavItem>
                   <Button
                     color="secondary"
@@ -86,8 +85,8 @@ const NavBar = () => {
                     Log out
                   </Button>
                 </NavItem>
-              )}
-            </Nav>
+              </Nav>
+            )}
             {/* {isAuthenticated && (
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret id="profileDropDown">
