@@ -36,7 +36,7 @@ h1 {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding: 2px 20px;
+  /* padding: 2px 20px; */
 }
 
 .app .top {
@@ -114,4 +114,10 @@ p.app-name {
   background-color: #383b47;
   margin: 0;
   bottom: 0px;
+  text-align: center;
+}
+.nav-container,
+.app-navbar {
+  background-color: red;
+  /* background: blue; */
 }
