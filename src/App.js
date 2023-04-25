@@ -5,7 +5,7 @@ import { Router, Route, Switch } from "react-router-dom";
 import Loading from "./components/Loading";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Home from "./views/Home";
+import Home from "./components/Home";
 // import Profile from "./views/Profile";
 import WeatherApp from "./src_weather_app/WeatherApp";
 import { useAuth0 } from "@auth0/auth0-react";
