@@ -1,5 +1,5 @@
 import React from "react";
-import "./WeatherApp.css";
+import "../style/WeatherApp.css";
 import SelectCity from "./SelectCity";
 import IterateCityId from "./IterateCityId";
 

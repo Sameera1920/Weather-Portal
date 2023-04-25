@@ -2,11 +2,11 @@ import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
 // import { Container } from "reactstrap";
 
-import Loading from "./components/Loading";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import LoginPrompt from "./components/LoginPrompt";
+import Loading from "./views/Loading";
+import NavBar from "./views/NavBar";
+import Footer from "./views/Footer";
+import Home from "./views/Home";
+import LoginPrompt from "./views/LoginPrompt";
 // import Profile from "./views/Profile";
 import WeatherApp from "./src_weather_app/WeatherApp";
 import { useAuth0 } from "@auth0/auth0-react";
