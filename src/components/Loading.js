@@ -1,10 +1,11 @@
 import React from "react";
+import "../src_weather_app/WeatherApp.css";
 // import loading from "../assets/loading.svg";
 
 const Loading = () => (
-  <div className="spinner">
+  <div>
     {/* <img src={loading} alt="Loading" /> */}
-    Loading...
+    <h3 className="loading"> Loading...</h3>
   </div>
 );
 

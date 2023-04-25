@@ -121,3 +121,9 @@ p.app-name {
   padding: 0;
   margin: 0;
 }
+
+.loading {
+  padding-top: 100px;
+  text-align: center;
+  justify-content: center;
+}
