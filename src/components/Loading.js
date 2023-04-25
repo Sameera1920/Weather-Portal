@@ -3,9 +3,9 @@ import "../src_weather_app/WeatherApp.css";
 // import loading from "../assets/loading.svg";
 
 const Loading = () => (
-  <div>
+  <div className="loading-page">
     {/* <img src={loading} alt="Loading" /> */}
-    <h3 className="loading"> Loading...</h3>
+    <h3 className="messages"> Loading...</h3>
   </div>
 );
 

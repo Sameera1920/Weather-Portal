@@ -3,10 +3,10 @@ import React from "react";
 
 // import logo from "../src_weather_app/weather_app_assets/app_logo.png";
 const LoginPrompt = () => (
-  <div className="text-center hero my-5 ">
+  <div className="login-prompt-page">
     {/* <img className="mb-3 app-logo" src={logo} alt="app logo" width="120" /> */}
 
-    <h2 className="mb-4">Please Login to View Weather Data</h2>
+    <h2 className="messages">Please Login to View Weather Data</h2>
 
     {/* <p className="lead">
       This is a sample application that demonstrates an authentication flow for
