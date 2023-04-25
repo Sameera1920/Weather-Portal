@@ -116,8 +116,8 @@ p.app-name {
   bottom: 0px;
   text-align: center;
 }
-.nav-container,
+
 .app-navbar {
-  background-color: red;
-  /* background: blue; */
+  padding: 0;
+  margin: 0;
 }
