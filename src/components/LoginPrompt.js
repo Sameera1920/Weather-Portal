@@ -2,12 +2,11 @@ import React from "react";
 // import { useAuth0 } from "@auth0/auth0-react";
 
 // import logo from "../src_weather_app/weather_app_assets/app_logo.png";
-const Home = () => (
-  <div className="text-center my-4 ">
+const LoginPrompt = () => (
+  <div className="text-center hero my-5 ">
     {/* <img className="mb-3 app-logo" src={logo} alt="app logo" width="120" /> */}
 
-    <h2>You are Logged in!</h2>
-    <h2>Please Navigate Weather App to View Data</h2>
+    <h2 className="mb-4">Please Login to View Weather Data</h2>
 
     {/* <p className="lead">
       This is a sample application that demonstrates an authentication flow for
@@ -16,4 +15,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default LoginPrompt;

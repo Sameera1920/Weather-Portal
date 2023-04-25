@@ -40,18 +40,18 @@ const NavBar = () => {
           {/* <NavbarBrand className="logo" /> */}
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-              <NavItem>
-                <NavLink
-                  tag={RouterNavLink}
-                  to="/"
-                  exact
-                  activeClassName="router-link-exact-active"
-                >
-                  Home
-                </NavLink>
-              </NavItem>
-              {!isAuthenticated && (
+            {!isAuthenticated && (
+              <Nav className="mr-auto" navbar>
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/login"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Home
+                  </NavLink>
+                </NavItem>
                 <NavItem>
                   <Button
                     id="qsLoginBtn"
@@ -62,14 +62,24 @@ const NavBar = () => {
                     Log in
                   </Button>
                 </NavItem>
-              )}
-            </Nav>
+              </Nav>
+            )}
             {isAuthenticated && (
               <Nav className="mr-auto" navbar>
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/weather-api"
+                    to="/home"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Home
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to=""
                     exact
                     activeClassName="router-link-exact-active"
                   >
