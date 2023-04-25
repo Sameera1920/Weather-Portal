@@ -16,7 +16,7 @@ h1 {
 
 .app:before {
   content: "";
-  background: url("./weather_app_assets/main-bg.jpg") no-repeat top center/cover;
+  background: url("../assets/main-bg.jpg") no-repeat top center/cover;
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -74,7 +74,7 @@ h1 {
   height: 50px;
   margin-top: 5px;
   padding: 0px;
-  background: url("./weather_app_assets/app_logo.png") no-repeat center;
+  background: url("../assets/app_logo.png") no-repeat center;
 }
 
 p.app-name {
@@ -127,7 +127,7 @@ p.app-name {
 .login-prompt-page {
   width: 100%;
   height: 100%;
-  background: url("./weather_app_assets/main-bg.jpg") no-repeat top center/cover;
+  background: url("../assets/main-bg.jpg") no-repeat top center/cover;
 }
 
 .messages {

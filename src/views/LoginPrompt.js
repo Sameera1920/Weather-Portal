@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/WeatherApp.css";
 // import { useAuth0 } from "@auth0/auth0-react";
 
 // import logo from "../src_weather_app/weather_app_assets/app_logo.png";

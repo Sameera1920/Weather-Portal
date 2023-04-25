@@ -8,7 +8,7 @@ import Footer from "./views/Footer";
 import Home from "./views/Home";
 import LoginPrompt from "./views/LoginPrompt";
 // import Profile from "./views/Profile";
-import WeatherApp from "./src_weather_app/WeatherApp";
+import WeatherApp from "./WeatherAppComponents/WeatherApp";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import cityList from "./weather_app_assets/cities.json";
+import cityList from "../assets/cities.json";
 
 function SelectCity() {
   const options = cityList.List.map((city, index) => (
