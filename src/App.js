@@ -6,7 +6,7 @@ import Loading from "./components/Loading";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
-import Profile from "./views/Profile";
+// import Profile from "./views/Profile";
 import WeatherApp from "./src_weather_app/WeatherApp";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
@@ -36,7 +36,7 @@ const App = () => {
         <>
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/profile" component={Profile} />
+            {/* <Route path="/profile" component={Profile} /> */}
             <Route path="/weather-api" component={WeatherApp} />
           </Switch>
         </>
