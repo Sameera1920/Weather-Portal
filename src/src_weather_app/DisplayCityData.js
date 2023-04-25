@@ -1,5 +1,5 @@
 import { COLORS } from "./Constants.js";
-import "./CityData.css";
+import "../style/CityData.css";
 import CityMainDetails from "./CityDataComponents/CityMainDetails";
 import Atmosphere from "./CityDataComponents/Atmosphere";
 import TempMinMax from "./CityDataComponents/TempMinMax";

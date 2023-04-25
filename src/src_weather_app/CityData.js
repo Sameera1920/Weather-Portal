@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { COLORS } from "./Constants.js";
-import "./index.css";
-import "./App9999.css";
-import "./CityData.css";
+import "../style/index.css";
+import "../style/WeatherApp.css";
+import "../style/CityData.css";
 import jsonFileData from "./weather_app_assets/cities.json";
 import CityMainDetails from "./CityDataComponents/CityMainDetails";
 import Atmosphere from "./CityDataComponents/Atmosphere";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
-import "../src_weather_app/WeatherApp.css";
+import "../style/WeatherApp.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {

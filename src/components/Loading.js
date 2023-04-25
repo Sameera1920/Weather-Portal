@@ -1,5 +1,5 @@
 import React from "react";
-import "../src_weather_app/WeatherApp.css";
+import "../style/WeatherApp.css";
 // import loading from "../assets/loading.svg";
 
 const Loading = () => (
