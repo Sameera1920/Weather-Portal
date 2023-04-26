@@ -5,8 +5,6 @@ function CallApiData(props) {
   const { index, code } = props;
   const [data, setData] = useState(null);
 
-  const cacheExpirationTime = process.env.REACT_APP_CACHE_EXPIRATION_TIME;
-
   useEffect(() => {
     const cacheTimestampKey = "weatherData_Timestamp";
     const cacheTimestamps = JSON.parse(
@@ -15,7 +13,8 @@ function CallApiData(props) {
     const cacheKey = `weatherData_${code}`;
     const cacheTimestamp = cacheTimestamps[code];
     const isCacheValid =
-      cacheTimestamp && Date.now() - cacheTimestamp < cacheExpirationTime;
+      cacheTimestamp &&
+      Date.now() - cacheTimestamp < process.env.REACT_APP_CACHE_EXPIRATION_TIME;
     if (isCacheValid) {
       setData(JSON.parse(localStorage.getItem(cacheKey)));
     } else {
