@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DisplayCityData from "./DisplayCityData";
-// import cityDataFromFile from "./weather_app_assets/cities.json";
 
 function CallApiData(props) {
-  // const cityIdArray = cityDataFromFile.List;
   const { index, code } = props;
   const [data, setData] = useState(null);
 

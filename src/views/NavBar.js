@@ -1,22 +1,15 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import "../style/WeatherApp.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   Collapse,
   Container,
   Navbar,
   NavbarToggler,
-  // NavbarBrand,
   Nav,
   NavItem,
   NavLink,
   Button,
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem,
 } from "reactstrap";
 
 import { useAuth0 } from "@auth0/auth0-react";
@@ -37,7 +30,6 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar color="light" light expand="md" className="app-navbar">
         <Container>
-          {/* <NavbarBrand className="logo" /> */}
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             {!isAuthenticated && (

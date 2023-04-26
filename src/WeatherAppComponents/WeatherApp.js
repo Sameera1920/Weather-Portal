@@ -20,9 +20,6 @@ function WeatherApp() {
           <IterateCityId />
         </div>
       </div>
-      {/* <div className="bottom">
-        <div className="footer">2023 Fidenz Technologies</div>
-      </div> */}
     </div>
   );
 }

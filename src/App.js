@@ -1,21 +1,17 @@
 import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
-// import { Container } from "reactstrap";
 
 import Loading from "./views/Loading";
 import NavBar from "./views/NavBar";
 import Footer from "./views/Footer";
 import Home from "./views/Home";
 import LoginPrompt from "./views/LoginPrompt";
-// import Profile from "./views/Profile";
 import WeatherApp from "./WeatherAppComponents/WeatherApp";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 
-// styles
 import "./style/App.css";
 
-// fontawesome
 import initFontAwesome from "./utils/initFontAwesome";
 initFontAwesome();
 

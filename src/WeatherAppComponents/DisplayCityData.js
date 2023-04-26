@@ -12,7 +12,6 @@ function DisplayCityData(props) {
 
   return (
     <div
-      // key={weatherData.id}
       key={index}
       className="weather-wrapper"
       style={{ backgroundColor: COLORS[index] }}

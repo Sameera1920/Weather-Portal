@@ -14,13 +14,8 @@ import SunRiseSunSet from "./CityDataComponents/SunRiseSunSet";
 function CityData(props) {
   const { cityCode } = props;
   const cacheExpirationTime = process.env.REACT_APP_CACHE_EXPIRATION_TIME;
-
-  // const cityCodeArray = jsonFileData.List.map((city) => city.CityCode);
   const cityCodeList = jsonFileData.List;
-
-  // const [cityCodes, setCityCodes] = useState(cityCodeArray.slice(0, 5));
   const [cityCodes, setCityCodes] = useState(cityCodeList);
-
   const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
@@ -59,10 +54,6 @@ function CityData(props) {
     fetchData();
   }, []);
 
-  // const handleCloseClick = (cityId) => {
-  //   setCityCodes((cityCodes) => cityCodes.filter((city) => city != cityId));
-  // };
-
   return weatherData.map((data, i) => (
     <div
       key={data.id}
@@ -78,7 +69,6 @@ function CityData(props) {
           <button
             className="close-button"
             id={data.id}
-            // onClick={() => handleCloseClick(data.id)}
             style={{ backgroundColor: COLORS[i] }}
           >
             X
