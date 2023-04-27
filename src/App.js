@@ -10,8 +10,6 @@ import WeatherApp from "./WeatherAppComponents/WeatherApp";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 
-import "./style/App.css";
-
 import initFontAwesome from "./utils/initFontAwesome";
 initFontAwesome();
 

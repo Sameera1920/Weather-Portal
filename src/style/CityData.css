@@ -13,23 +13,20 @@
   flex-direction: column;
 }
 
-.weather-wrapper {
-  width: 330px;
-  height: 180px;
-  overflow: hidden;
-  background: url("../assets/cloud-card.png") no-repeat bottom/cover;
-  border-radius: 6px;
-  align-self: center;
-}
-
 .middle {
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 30px;
   overflow: scroll;
 }
 
 .middle::-webkit-scrollbar {
   display: none;
+}
+
+.weather-wrapper {
+  overflow: hidden;
+  background: url("../assets/cloud-card.png") no-repeat bottom/cover;
+  border-radius: 6px;
 }
 
 .city-top {
@@ -220,12 +217,19 @@
 }
 
 @media only screen and(max-width: 797px) {
-  .middle {
-    /* grid-template-columns: repeat(1, 1fr); */
-    justify-content: center;
+  .middle:nth-child() {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefeff;
   }
+  .middle:nth-child() {
+    width: 100px;
+  }
+
   .weather-wrapper {
-    margin: 5px auto;
+    max-width: 100px;
+    max-height: 75px;
+    margin-top: 20px;
   }
 }
 
@@ -242,7 +246,11 @@
   .middle :nth-child(even) {
     justify-self: left;
   }
-
+  .weather-wrapper {
+    width: 330px;
+    height: 180px;
+    align-self: center;
+  }
   .city-bottom-left {
     padding-bottom: 4px;
   }
