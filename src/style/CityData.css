@@ -14,22 +14,20 @@
 }
 
 .weather-wrapper {
-  width: 275px;
-  aspect-ratio: 16/9;
+  width: 330px;
+  height: 180px;
   overflow: hidden;
   background: url("../assets/cloud-card.png") no-repeat bottom/cover;
   border-radius: 6px;
+  border: 1px solid red;
+  align-self: center;
 }
 
 .middle {
-  float: left;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  overflow: auto;
+  padding-top: 20px;
+  margin-top: 30px;
+  border: 1px solid red;
+  overflow: scroll;
 }
 
 .middle::-webkit-scrollbar {
@@ -207,16 +205,30 @@
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and(max-width: 797px) {
+  .middle {
+    /* grid-template-columns: repeat(1, 1fr); */
+    justify-content: center;
+  }
   .weather-wrapper {
     margin: 5px auto;
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 798px) {
   .middle {
-    margin-left: auto;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
   }
+  .middle :nth-child(odd) {
+    justify-self: right;
+  }
+  .middle :nth-child(even) {
+    justify-self: left;
+  }
+
   .city-bottom-left {
     padding-bottom: 4px;
   }

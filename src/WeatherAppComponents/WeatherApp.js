@@ -16,7 +16,7 @@ function WeatherApp() {
             <SelectCity />
           </div>
         </div>
-        <div className="middle flex-in-row">
+        <div className="middle">
           <IterateCityId />
         </div>
       </div>
