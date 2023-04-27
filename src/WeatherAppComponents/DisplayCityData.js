@@ -33,13 +33,13 @@ function DisplayCityData(props) {
         </div>
       </div>
       <div className="city-bottom">
-        <div className="city-bottom-left ">
+        <div className="city-bottom-left left-line">
           <FeelingCondition weather={weatherData} />
         </div>
-        <div className="city-bottom-middle line">
+        <div className="city-bottom-middle ">
           <WindPattern weather={weatherData.wind} />
         </div>
-        <div className="city-bottom-right line">
+        <div className="city-bottom-right right-line">
           <SunRiseSunSet weather={weatherData} />
         </div>
       </div>
