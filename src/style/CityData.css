@@ -19,14 +19,12 @@
   overflow: hidden;
   background: url("../assets/cloud-card.png") no-repeat bottom/cover;
   border-radius: 6px;
-  border: 1px solid red;
   align-self: center;
 }
 
 .middle {
   padding-top: 20px;
   margin-top: 30px;
-  border: 1px solid red;
   overflow: scroll;
 }
 
