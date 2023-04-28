@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/WeatherApp.css";
 import cityList from "../assets/cities.json";
 
 function SelectCity() {
