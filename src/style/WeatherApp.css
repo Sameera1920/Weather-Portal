@@ -8,7 +8,7 @@ h1 {
 
 .app {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -19,7 +19,7 @@ h1 {
   background: url("../assets/main-bg.jpg") no-repeat top center/cover;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0px;
   left: 0px;
   z-index: -2;
@@ -38,13 +38,13 @@ h1 {
   margin-right: auto;
 }
 
-.app .top {
+.top {
   width: 100%;
   margin: 0.75rem auto;
 }
 
-.app .app-title,
-.app .input-city {
+.app-title,
+.input-city {
   position: relative;
   top: 1%;
   display: flex;
@@ -54,12 +54,14 @@ h1 {
   width: auto;
   height: 30px;
 }
-
-.app .input-city {
-  margin-top: 15px;
+.app-title {
+  padding-top: 30px;
+}
+.input-city {
+  margin-top: 22px;
 }
 
-.app .bottom {
+.bottom {
   width: 100%;
   justify-content: center;
   margin: 1rem auto;
@@ -106,14 +108,14 @@ p.app-name {
 .footer {
   position: fixed;
   width: 100%;
-  height: 20px;
-  bottom: 0;
+  height: 35px;
   font-size: 12px;
   color: darkgrey;
   background-color: #383b47;
   margin: 0;
   bottom: 0px;
   text-align: center;
+  padding-top: 10px;
 }
 
 .app-navbar {

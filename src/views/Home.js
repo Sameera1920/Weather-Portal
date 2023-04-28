@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Badge.css";
+import "../style/WeatherApp.css";
 
 const Home = () => (
   <div className="home-page">
