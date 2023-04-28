@@ -1,43 +1,20 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router } from "react-router-dom";
 
-import Loading from "./views/Loading";
+import MainPage from "./views/MainPage";
 import NavBar from "./views/NavBar";
 import Footer from "./views/Footer";
-import Home from "./views/Home";
-import LoginPrompt from "./views/LoginPrompt";
-import WeatherApp from "./WeatherAppComponents/WeatherApp";
-import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 
 import initFontAwesome from "./utils/initFontAwesome";
 initFontAwesome();
 
 const App = () => {
-  const { isLoading, error, isAuthenticated } = useAuth0();
-
-  if (error) {
-    return <div>Oops... {error.message}</div>;
-  }
-
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <Router history={history}>
       <div id="app">
         <NavBar />
-        <>
-          <Switch>
-            <Route path="/home" exact component={Home} />
-            <Route
-              path=""
-              exact
-              component={isAuthenticated ? WeatherApp : LoginPrompt}
-            />
-          </Switch>
-        </>
+        <MainPage />
         <Footer />
       </div>
     </Router>
