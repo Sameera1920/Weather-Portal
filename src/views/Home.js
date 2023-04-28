@@ -7,8 +7,8 @@ const Home = () => (
       <p className="logo"></p>
       <p className="name">Weather App</p>
     </div>
-    <h2 className="messages">You are Logged in!</h2>
-    <h2 className="messages">Please Navigate Weather App to View Data</h2>
+    <h2 className="messages green">You are Logged in!</h2>
+    <h2 className="messages green">Please Navigate to Weather App</h2>
   </div>
 );
 

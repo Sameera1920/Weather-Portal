@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Badge.css";
+import "../style/WeatherApp.css";
 
 const LoginPrompt = () => (
   <div className="login-prompt-page">
@@ -7,7 +7,7 @@ const LoginPrompt = () => (
       <p className="logo"></p>
       <p className="name">Weather App</p>
     </div>
-    <h2 className="messages">Please Login to View Weather Data</h2>
+    <h2 className="messages red">Please Login to View Weather Data</h2>
   </div>
 );
 

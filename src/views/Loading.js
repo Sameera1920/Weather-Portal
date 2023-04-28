@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Badge.css";
+import "../style/WeatherApp.css";
 
 const Loading = () => (
   <div className="loading-page">
@@ -7,7 +7,7 @@ const Loading = () => (
       <p className="logo"></p>
       <p className="name">Weather App</p>
     </div>
-    <h3 className="messages"> Loading...</h3>
+    <h3 className="messages yellow"> Loading...</h3>
   </div>
 );
 
