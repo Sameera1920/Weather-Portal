@@ -223,7 +223,7 @@
 
 @media only screen and (max-width: 797px) {
   .middle {
-    margin-top: 6px;
+    margin-top: 14px;
   }
   .middle:nth-child() {
     display: flex;
