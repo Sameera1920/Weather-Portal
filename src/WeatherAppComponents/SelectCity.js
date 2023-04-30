@@ -3,7 +3,7 @@ import "../style/WeatherApp.css";
 import cityList from "../assets/cities.json";
 
 function SelectCity() {
-  const options = cityList.List.map((city, index) => (
+  const options = cityList.List.map((city) => (
     <option key={city.CityCode} value={city.CityCode}>
       {city.CityName}
     </option>
