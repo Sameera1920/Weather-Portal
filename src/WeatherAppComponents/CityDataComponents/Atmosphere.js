@@ -2,7 +2,7 @@ import React from "react";
 
 function Atmosphere({ weather }) {
   const cloudIconUrl = `http://openweathermap.org/img/wn/${weather.icon}.png`;
-  const altUrl = "../weather_app_assets/04d.png";
+  const altUrl = "../../assets/04d.png";
 
   return (
     <div className="atmosphere">
