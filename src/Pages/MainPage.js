@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import Loading from "./Loading";
-import Home from "./Home";
+import Home from "./NavigationPrompt";
 import WeatherApp from "../WeatherAppComponents/WeatherApp";
 import LoginPrompt from "./LoginPrompt";
 

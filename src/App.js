@@ -1,9 +1,9 @@
 import React from "react";
 import { Router } from "react-router-dom";
 
-import MainPage from "./views/MainPage";
-import NavBar from "./views/NavBar";
-import Footer from "./views/Footer";
+import MainPage from "./Pages/MainPage";
+import NavBar from "./Pages/NavBar";
+import Footer from "./Pages/Footer";
 import history from "./utils/history";
 
 import initFontAwesome from "./utils/initFontAwesome";
