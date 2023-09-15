@@ -1,105 +1,87 @@
-# Auth0 React SDK Sample Application
+# Weather Portal
 
-This sample demonstrates the integration of [Auth0 React SDK](https://github.com/auth0/auth0-react) into a React application created using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). The sample is a companion to the [Auth0 React SDK Quickstart](https://auth0.com/docs/quickstart/spa/react).
+Weather Portal is your tool for knowing what the weather is like in a few cities. Whether you want to plan a day out, travel safely, or just be aware of the weather, this portal can help. It gives you the latest and accurate weather details for your chosen cities. We're here to make checking the weather easy and reliable.
 
-This sample demonstrates the following use cases:
+![Image of the Weather Portal on phone, tablet and desktop](https://github.com/Sameera1920/Weather-Portal/blob/test/public/Weather_Portal.png)
 
-- [Login](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/components/NavBar.js#L72-L79)
-- [Logout](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/components/NavBar.js#L102-L108)
-- [Showing the user profile](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/Profile.js)
-- [Protecting routes](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/Profile.js#L33)
-- [Calling APIs](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/ExternalApi.js)
+## Motivation
 
-## Project setup
+We extend a warm invitation to explore our Weather Portal, a place where you can access valuable weather information without the clutter of forecasts. We understand that having the right weather details at your fingertips is essential for planning your day with precision. Our portal is thoughtfully curated to provide you with essential weather information in a courteous and user-friendly manner. Whether you seek temperature trends, atmospheric conditions, or climate insights for your area of interest
 
-Use `yarn` to install the project dependencies:
+## Features
 
-```bash
-yarn install
-```
+- **Current Weather Information:**
 
-## Configuration
+  - Display of the current weather conditions for a selected location, including temperature, humidity, wind speed and direction, atmospheric pressure, and visibility.
 
-### Create an API
+- **Location Selection:**
 
-For the ["call an API"](https://auth0.com/docs/quickstart/spa/react/02-calling-an-api) page to work, you will need to [create an API](https://auth0.com/docs/apis) using the [management dashboard](https://manage.auth0.com/#/apis). This will give you an API identifier that you can use in the `audience` configuration field below.
+  - Ability for users to search for and select their desired location or city to view its current weather data.
 
-If you do not wish to use an API or observe the API call working, you should not specify the `audience` value in the next step. Otherwise, you will receive a "Service not found" error when trying to authenticate.
+- **Weather Icons:**
 
-### Configure credentials
+  - Visual representation of weather conditions, such as icons for sunny, cloudy, rainy, snowy, or other weather states, to make information easily digestible.
 
-The project needs to be configured with your Auth0 domain and client ID in order for the authentication flow to work.
+- **Multiple Temperature Unit:**
 
-To do this, first copy `src/auth_config.json.example` into a new file in the same folder called `src/auth_config.json`, and replace the values with your own Auth0 application credentials, and optionally the base URLs of your application and API:
+  - Options for users to view in both Fahrenheit and Celsius for temperature display, catering to a global audience.
 
-```json
-{
-  "domain": "{YOUR AUTH0 DOMAIN}",
-  "clientId": "{YOUR AUTH0 CLIENT ID}",
-  "audience": "{YOUR AUTH0 API_IDENTIFIER}",
-  "appOrigin": "{OPTIONAL: THE BASE URL OF YOUR APPLICATION (default: http://localhost:3000)}",
-  "apiOrigin": "{OPTIONAL: THE BASE URL OF YOUR API (default: http://localhost:3001)}"
-}
-```
+- **Time and Date:**
 
-**Note**: Do not specify a value for `audience` here if you do not wish to use the API part of the sample.
+  - Display of the current date and time for the selected location, often synchronized with the local time zone.
 
-## Run the sample
+- **Weather Description:**
 
-### Compile and hot-reload for development
+  - A brief textual description of the current weather conditions, helping users understand the weather at a glance.
 
-This compiles and serves the React app and starts the backend API server on port 3001.
+- **Sunrise and Sunset Times:**
 
-```bash
-yarn run dev
-```
+  - Information on the times of sunrise and sunset for the selected location, providing insights for planning outdoor activities.
 
-## Deployment
+- **Responsive Design:**
 
-### Compiles and minifies for production
+  - A user-friendly and responsive layout that adapts to various screen sizes, including mobile devices and desktops.
 
-```bash
-yarn run build
-```
+- **Local Time Display:**
 
-### Docker build
+  - Showing the local time of the selected location to help users understand the current time relative to their location.
 
-To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
+- **Simple Navigation:**
 
-### Run your tests
+  - Intuitive navigation menus and user-friendly interface to make it easy for users to find the information they need.
 
-```bash
-yarn run test
-```
+- **Access Control**
 
-## Frequently Asked Questions
+  - Granular access controls to ensure that only authorized users or applications can access to the portal.
 
-If you're having issues running the sample applications, including issues such as users not being authenticated on page refresh, please [check the auth0-react FAQ](https://github.com/auth0/auth0-react/blob/master/FAQ.md).
+- **Authentication and Authorization**
 
-## What is Auth0?
+  - Secure authentication methods to verify the identity of users or applications and authorize them to access the portal.
 
-Auth0 helps you to:
+## Installation & Usage
 
-* Add authentication with [multiple sources](https://auth0.com/docs/identityproviders), either social identity providers such as **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce** (amongst others), or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS, or any SAML Identity Provider**.
-* Add authentication through more traditional **[username/password databases](https://auth0.com/docs/connections/database/custom-db)**.
-* Add support for **[linking different user accounts](https://auth0.com/docs/users/user-account-linking)** with the same user.
-* Support for generating signed [JSON Web Tokens](https://auth0.com/docs/tokens/json-web-tokens) to call your APIs and **flow the user identity** securely.
-* Analytics of how, when, and where users are logging in.
-* Pull data from other sources and add it to the user profile through [JavaScript rules](https://auth0.com/docs/rules).
+- **Open Visual Studio Code:**
 
-## Create a Free Auth0 Account
+  - Launch Visual Studio Code on your computer.
 
-1. Go to [Auth0](https://auth0.com) and click **Sign Up**.
-2. Use Google, GitHub, or Microsoft Account to login.
+- **Open the Project Folder:**
 
-## Issue Reporting
+  - In Visual Studio Code, go to "File" > "Open Folder" and select the folder where your project is located.
 
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/responsible-disclosure-policy) details the procedure for disclosing security issues.
+- **Run the Project:**
 
-## Author
+  - Depending on the type of project, you may need to run a specific command to start it. Common commands include:
 
-[Auth0](https://auth0.com)
+  - For web applications: `npm start` or `yarn start`
 
-## License
+- **Access the Project:**
 
-This project is licensed under the MIT license. See the [LICENSE](../LICENSE) file for more info.
+  - Once the project is running, open a web browser and navigate to the URL where the project is hosted. This could be a local URL like `http://localhost:3000`, or it could be a remote URL if your project is deployed online.
+
+- **Interact with the Project:**
+
+  - You can now interact with the project through the user interface.
+
+- **Stopping the Project:**
+
+  - To stop the project, return to the terminal where it's running and press `Ctrl + C`.
