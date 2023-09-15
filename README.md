@@ -4,10 +4,6 @@ Weather Portal is your tool for knowing what the weather is like in a few cities
 
 ![Image of the Weather Portal on phone, tablet and desktop](https://github.com/Sameera1920/Weather-Portal/blob/master/public/latest.png)
 
-## Motivation
-
-We extend a warm invitation to explore our Weather Portal, a place where you can access valuable weather information without the clutter of forecasts. We understand that having the right weather details at your fingertips is essential for planning your day with precision. Our portal is thoughtfully curated to provide you with essential weather information in a courteous and user-friendly manner. Whether you seek temperature trends, atmospheric conditions, or climate insights for your area of interest
-
 ## Features
 
 - **Current Weather Information:**
